@@ -26,11 +26,7 @@ const blogSchema = new mongoose.Schema(
         ref: "User",
       },
     ],
-    image: {
-      type: String,
-      default:
-        "https://cdn.pixabay.com/photo/2019/09/17/18/48/computer-4484282_960_720.jpg",
-    },
+    images: [],
     author: {
       type: String,
       default: "Admin",
