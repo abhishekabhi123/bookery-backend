@@ -10,6 +10,7 @@ const blogRoute = require("./routes/blogRoute");
 const genreRoute = require("./routes/productGenreRoute");
 const blogGenreRoute = require("./routes/blogGenreRoute");
 const publisherRoute = require("./routes/publisherRoute");
+const enqRoute = require("./routes/enqRoute");
 const couponRoute = require("./routes/couponRoute");
 
 const cookieParser = require("cookie-parser");
@@ -29,6 +30,7 @@ app.use("/api/genre", genreRoute);
 app.use("/api/blog-genre", blogGenreRoute);
 app.use("/api/publisher", publisherRoute);
 app.use("/api/coupon", couponRoute);
+app.use("/api/enquiry", enqRoute);
 
 app.use(notFound);
 app.use(errorHandler);
